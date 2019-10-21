@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	
+		<div class="row">
+			<div class="card" value=1><div class="front"></div><div class="back"></div></div>
+			<div class="card" value=2><div class="front"></div><div class="back"></div></div>
+			<div class="card" value=3><div class="front"></div><div class="back"></div></div>
+			<div class="card" value=4><div class="front"></div><div class="back"></div></div>
+			<div class="card" value=5><div class="front"></div><div class="back"></div></div>
+			<div class="card" value=6><div class="front"></div><div class="back" ></div></div>
+			<div class="card" value=7><div class="front"></div><div class="back"></div></div>
+			<div class="card" value=8><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=9><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=10><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=11><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=12><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=13><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=14><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=15><div class="front"></div><div class="back"></div></div>
+            <div class="card" value=16><div class="front"></div><div class="back"></div></div>
+            <div id="wall"></div>
+        </div>
+        <div class="time">          
+            <p id="timeCount">0分0秒</p>
+            <input type="button" id='timeStop'onclick="stop()" value="暫停遊戲">
+        </div>
+        <div class='stopMask'></div>
+        <div class="mask">
+            <div class="intro">
+                遊戲方式：
+                  1.翻牌後記住牌面花色及位置
+                  2.連續翻出兩張同花色的牌就可以消除
+                  請盡快翻出所有的卡牌吧！
+                <button onclick="startGame()">開始遊戲</button>
+            </div>
+		</div>
+          <div class="seccessMask">
+              <div class="congragudate">
+                  恭喜你在<span id='finalTime'></span>內完成遊戲!
+                  <button onclick="startGame()">再玩一次</button>
+              </div>
+          </div>
+	<!-- </div> -->
+
+</body>
+</html>
+<script src="main.js"></script>
